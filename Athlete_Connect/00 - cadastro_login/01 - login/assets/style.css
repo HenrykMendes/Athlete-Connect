@@ -50,8 +50,11 @@ main h1 {
 .loginpage p {
   margin-bottom: 0;
 }
-.loginpage a,
-
+.loginpage a {
+  color: #03af50;
+  text-decoration: none;
+  font-weight: 700;
+}
 /* bloco de inputs de login */
 .forms {
   display: flex;
