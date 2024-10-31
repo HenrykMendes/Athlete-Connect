@@ -1,4 +1,4 @@
-# Projeto Athetic Connect 
+# Projeto Athlete Connect
 
 Repositório referente ao trabalho semestral do PROFESSOR Elton Figueredo da matéria Processos de Software.
 
