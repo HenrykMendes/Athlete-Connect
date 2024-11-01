@@ -1,6 +1,6 @@
 /* css aplicado em todos os tipos de dispositivos e em todos os filhos da tag main:*/
 * {
-  margin: 0;
+  margin: 0;  
   padding: 0;
   box-sizing: border-box;
 }
@@ -21,6 +21,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#h2{
+  color: #03af50;
 }
 
 main h1 {
@@ -72,6 +76,7 @@ main h1 {
   padding: 20px;
   font-size: 20px;
 }
+
 
 /* css do modal de redefinição de senha */
 .modal {
@@ -154,6 +159,37 @@ main h1 {
   box-shadow: 0 0 0 0.2rem rgba(7, 218, 101, 0.25);
   background: #07da65;
   transition: 0.3s;
+}
+/* Input das opções da carreira   */
+.opc .input-select {
+  /* Estilos atuais */
+  width: 100%;
+  min-width: 303px;
+  height: auto;
+  flex-shrink: 0;
+  background-color: #f7fdff; /* Cor de fundo padrão */
+  border: 1px solid #cdcdcd;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: black;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="gray" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M12.14 6.387a.5.5 0 0 1 0 .707l-3.5 3.5a.5.5 0 0 1-.707 0l-3.5-3.5a.5.5 0 0 1 .707-.707L8 9.793l3.14-3.14a.5.5 0 0 1 .707 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+}
+
+.opc .input-select:focus {
+  background-color:#03af50; /* Cor de fundo ao focar (ex: azul claro) */
+  border-color: #000000; /* Cor da borda ao focar (opcional) */
+  outline: none; /* Remove a borda padrão ao focar */
+}
+
+.opc .input-select:focus-within {
+  background-color: white; /* Cor de fundo quando uma opção está selecionada */
 }
 
 /* mobile */
