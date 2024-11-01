@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login_Apoiador</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
     <main>
@@ -20,36 +19,37 @@
         <h1>Carreira</h1>
       </section>
 
-      <section class="opc">
-    <select class="input-select" id="opcoes" name="opcoes">
-        <option value="opcao1">Investidor</option>
-        <option value="opcao2">Organização</option>
-    </select>
-</section>
+      <form class="opc" name="opcforms">
+        <select class="input-select" id="opcoes" name="opcoes">
+          <option value="investidor">Investidor</option>
+          <option value="organizacao">Organização</option>
+        </select>
 
-      </section>
-   
+        <div class="submitInput">
+          <input
+            class="botaoPrincipal"
+            type="submit"
+            value="AVANÇAR"
+            name="submit"
+          />
+        </div>
+      </form>
 
       <section class="loginpage">
-        <p>Já possui Conta?
-        <a href="#">Faça Login!</a></p>
+        <p>Já possui Conta? <a href="./index.html">Faça Login!</a></p>
       </section>
-
-      <div class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h4>Redefinir senha</h4>
-          <p>informe o CPF/CNPJ para qual deseja redefinir sua senha</p>
-          <input type="text" placeholder="CPF/CNPJ" />
-          <button class="botaoPrincipal" type="button">CONFIRMAR</button>
-        </div>
-      </div>
-
-      <div class="submitbutton">
-        <button class="botaoPrincipal" type="button">AVANÇAR</button>
-      </div>
     </main>
 
-    <script src="./assets/script.js"></script>
+    <script>
+      document.forms["opcforms"].addEventListener("submit", function (e) {
+        e.preventDefault();
+        let opcao = document.forms["opcforms"]["opcoes"].value;
+        if (opcao == "investidor") {
+          window.location.href = "./loginInvestidor.html";
+        } else {
+          window.location.href = "./loginOrg.html";
+        }
+      });
+    </script>
   </body>
 </html>

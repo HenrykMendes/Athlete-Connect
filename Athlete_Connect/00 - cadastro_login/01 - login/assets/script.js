@@ -2,8 +2,8 @@ let modal = document.querySelector(".modal");
 let btn = document.querySelector(".loginpage a");
 let span = document.querySelector(".close");
 let btnModal = document.querySelector(".modal button");
-let btnNext = document.querySelector(".submitbutton button");
 let inputs = document.querySelectorAll(".forms input");
+let btnNext = document.querySelector(".submitbutton button");
 
 // Validação dos campos de input do formulário de login
 btnNext.onclick = function () {
@@ -39,3 +39,4 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
