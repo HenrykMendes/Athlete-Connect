@@ -187,6 +187,7 @@ main h1 {
   background-color: white; /* Cor de fundo quando uma opção está selecionada */
 }
 
+
 /* mobile */
 @media screen and (max-width: 1024px) {
   main {
