@@ -1,18 +1,7 @@
 let modal = document.querySelector(".modal");
-let btn = document.querySelector(".loginpage a");
+let btn = document.querySelector(".postButton");
 let span = document.querySelector(".close");
 let btnModal = document.querySelector(".modal button");
-let inputs = document.querySelectorAll(".forms input");
-let btnNext = document.querySelector(".submitbutton button");
-
-// Validação dos campos de input do formulário de login
-btnNext.onclick = function () {
-  inputs.forEach((input) => {
-    if (input.value === "") {
-      alert("Preencha todos os campos");
-    }
-  });
-};
 
 // function para abrir o modal
 btn.onclick = function () {
@@ -33,10 +22,4 @@ span.onclick = function () {
   modal.style.display = "none";
 };
 
-// function para fechar o modal ao clicar fora dele
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
 

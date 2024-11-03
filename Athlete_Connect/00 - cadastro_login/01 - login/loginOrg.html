@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login_Organizacao</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css" />
+    <style>
+      .botaoPrincipal {
+        margin-top: 0;
+      }
+      .titleGreen {
+        color: #03af50;
+      }
+    </style>
   </head>
   <body>
     <main>
@@ -16,38 +24,46 @@
           border="0"
         />
         <h1>Registre uma</h1>
-        <h1 id="h2">Organização</h1>
+        <h1 class="titleGreen">Organização</h1>
       </section>
 
       <section class="forms">
         <input type="text" placeholder="CPF/CNPJ" />
         <input type="email" placeholder="Email" />
-        <input  type="text" placeholder="Nome do Perfil" />
+        <input type="text" placeholder="Nome do Perfil" />
         <input type="password" placeholder="Senha" />
-
       </section>
-   
 
       <section class="loginpage">
-        <p>Já possui Conta?
-        <a href="#">Faça Login!</a></p>
+        <p>Já possui Conta? <a href="./index.html">Faça Login!</a></p>
       </section>
-
-      <div class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h4>Redefinir senha</h4>
-          <p>informe o CPF/CNPJ para qual deseja redefinir sua senha</p>
-          <input type="text" placeholder="CPF/CNPJ" />
-          <button class="botaoPrincipal" type="button">CONFIRMAR</button>
-        </div>
-      </div>
 
       <div class="submitbutton">
         <button class="botaoPrincipal" type="button">AVANÇAR</button>
       </div>
     </main>
 
-    <script src="./assets/script.js"></script>
+    <script>
+      let btnNext = document.querySelector(".submitbutton button");
+      let inputs = document.querySelectorAll(".forms input");
+
+      btnNext.onclick = function () {
+        let qtd = 0;
+        inputs.forEach((input) => {
+          qtd++;
+        });
+        inputs.forEach((input) => {
+          if (input.value === "") {
+            alert("Preencha todos os campos");
+          } else {
+            qtd--;
+          }
+        });
+        
+        if (qtd === 0) {
+          window.location.href = "./loginOrg2.html";
+        }
+      };
+    </script>
   </body>
 </html>
