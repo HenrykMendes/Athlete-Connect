@@ -34,7 +34,6 @@ body {
     border-radius: 50%;
     margin-top: -100px;
     margin-left: 10px;
-    
 }
 
 .estatisticas-container {
@@ -47,11 +46,14 @@ body {
 }
 .estatisticas{
   margin-top: -100px;
+  font-size: larger;
 }
 
 .perfil-detalhes {
     text-align: center;
     margin-top: -40px;
+    border-radius: 40px;
+    
     
 }
 
@@ -64,7 +66,7 @@ h1 {
 .biografia {
     font-size: 1rem;
     color: #666;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-top:-10px;
 }
 
@@ -120,7 +122,6 @@ h1 {
 .postagem {
     padding: 15px 0;
     border-bottom: 1px solid #ddd;
-    
 }
 
 .postagem-cabecalho {
@@ -137,12 +138,14 @@ h1 {
 .nome-usuario {
     font-weight: bold;
     font-size: 1rem;
-    margin-left: -355px;
+    margin-left: -370px;
 }
 
+
 .texto-postagem {
-    margin-top: 8px;
+    margin-top: 1px;
     font-size: 0.9rem;
+    margin-left: 60px;
 }
 
 .imagem-postagem {
