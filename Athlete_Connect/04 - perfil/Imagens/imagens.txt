@@ -1,0 +1,9 @@
+LINKS DAS IMAGENS:
+    Foto do usuario:            
+              src="https://media.istockphoto.com/id/636887598/pt/foto/atleta-de-corrida.jpg?s=612x612&w=0&k=20&c=zevfrnWApWDvcYRinqLh7iB1GhdvwyuWtICeMHWmOWQ="
+    
+    Foto Postagem 1:
+              https://media.istockphoto.com/id/1322158059/pt/foto/dumbbell-water-bottle-towel-on-the-bench-in-the-gym.jpg?s=612x612&w=0&k=20&c=eFfg0ECbiSopufODZ0Kz6yKTXvay0pXQpwJaUXxpBoc=  
+    
+    Foto Postagem 2:
+             https://media.istockphoto.com/id/636887598/pt/foto/atleta-de-corrida.jpg?s=612x612&w=0&k=20&c=zevfrnWApWDvcYRinqLh7iB1GhdvwyuWtICeMHWmOWQ=
