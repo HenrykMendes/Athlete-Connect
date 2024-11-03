@@ -3,6 +3,13 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Banner */
+.banner {
+  width: 110%;
+  height: 200px;
+  background-image: url('https://img.freepik.com/fotos-gratis/halteres-no-chao-de-uma-academia-ai-generative_123827-23743.jpg'); 
+  background-position: center;
+}
 .main{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -25,9 +32,10 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-top: 70px;
+    margin-top: -100px;
+    margin-left: 10px;
+    
 }
-
 
 .estatisticas-container {
     display: flex;
@@ -37,11 +45,14 @@ body {
     margin-left: 50px;
     margin-top: 100px;
 }
-
+.estatisticas{
+  margin-top: -100px;
+}
 
 .perfil-detalhes {
     text-align: center;
-    margin-top: 15px;
+    margin-top: -40px;
+    
 }
 
 h1 {
@@ -68,8 +79,8 @@ h1 {
 }
 
 .botao-seguir, .botao-mensagem, .botao-compartilhar{
-    margin: 0 5px;
-    padding: 8px 16px;
+    margin: 0 8px;
+    padding: 8px 22px;
     border: none;
     cursor: pointer;
     text-align: center;
@@ -84,12 +95,16 @@ h1 {
 
 .botao-mensagem{
     text-decoration: none;
+    border: 2px solid #1dca02;
     background-color: white;
     color: #1dca02;
     border-radius: 10px;
+    transition: border-color 0.3s ease;
+    
 }
 .botao-compartilhar{
     text-decoration: none;
+    border: 2px solid #1dca02;
     background-color: white;
     color: #1dca02;
     border-radius: 10px;
