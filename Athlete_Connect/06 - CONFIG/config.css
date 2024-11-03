@@ -1,0 +1,83 @@
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f6f6f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .header h2 {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .lista-configuracoes {
+            list-style: none;
+            margin-left: -50px  ;
+        }
+
+        .campos-itens {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .campos-itens:hover {
+            background-color: #f0f0f0;
+        }
+        .icone-imagem-1{
+            width: 50px;
+            height: 40px;
+            margin-right: 5px;
+            margin-left: 25px;
+        }
+        .campos-itens svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 15px;
+            fill: #333;
+        }
+
+        .campos-itens a {
+            color: #3f9736;
+            text-decoration: none;
+            font-size: 21px;
+        }
+
+        .campos-itens a.green {
+            color: #3f9736;
+            font-weight: bold;
+        }
+
+        .close-app {
+            color: #e53935;
+            font-weight: bold;
+        }
