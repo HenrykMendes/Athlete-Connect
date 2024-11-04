@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Configurações de Perfil</title>
+  <link rel="stylesheet" href="config.css">
 </head>
+
 <body>
-  
+  <div class="container">
+    <div class="header">
+      <img src="https://i.pinimg.com/564x/e3/0a/7e/e30a7e1de560c68ac082db60b48f335c.jpg" alt="Profile Picture">
+      <h2 class="seu-perfil">Seu perfil</h2>
+      <a href="#">Editar perfil</a>
+    </div>
+
+    <ul class="lista-configuracoes">
+      <li class="campos-itens">
+   
+
+        <!-- ícone da opção "conta" -->
+        <div> 
+          <img src="assets/images/user.svg" alt="iconamoon-comment" class="icone-imagem-1" />
+        </div>
+
+        <a href="#" class="green">Conta</a>
+
+      </li>
+      <li class="campos-itens">
+        <svg> <!-- ícone for Chats -->
+          <use xlink:href="#icon-chat"></use>
+        </svg>
+        <a href="#"><strong>Chats</strong></a>
+        <div></div>
+
+      </li>
+      <li class="campos-itens">
+        <svg> <!-- ícone for Doações Enviadas -->
+          <use xlink:href="#icon-sent-donation"></use>
+        </svg>
+        <a href="#" class="green"><strong>Doações Enviadas</strong></a>
+      </li>
+      <li class="campos-itens">
+        <svg> <!-- icon for Doações Recebidas -->
+          <use xlink:href="#icon-received-donation"></use>
+        </svg>
+        <a href="#"><strong>Doações Recebidas</strong></a>
+      </li>
+      <li class="campos-itens">
+        <svg> <!-- icon for Central de Ajuda -->
+          <use xlink:href="#icon-help"></use>
+        </svg>
+        <a href="#"><strong>Central de Ajuda</strong></a>
+      </li>
+      <li class="campos-itens">
+        <svg> <!-- icon for Fechar Aplicativo -->
+          <use xlink:href="#icon-close"></use>
+        </svg>
+        <a href="#" class="close-app">Fechar Aplicativo</a>
+      </li>
+    </ul>
+  </div>
 </body>
+
 </html>
