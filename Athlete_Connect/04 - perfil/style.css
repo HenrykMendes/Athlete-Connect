@@ -118,7 +118,7 @@ main {
   border-radius: 30px;
 }
 
-.feed {
+.maincontent{
   width: 100%;
   max-width: 600px;
   margin: 0px auto;
@@ -132,6 +132,7 @@ main {
   gap: 8px;
   padding: 20px 18px 10px 18px;
   border-bottom: 2px solid #d9d9d9;
+  
 }
 
 .postagemcontent {
@@ -140,6 +141,7 @@ main {
   gap: 4px;
   width: 100%;
   margin-top: 15px;
+  
 }
 
 .postagemcontent > img {
@@ -421,10 +423,30 @@ svg {
   margin-left: -15px;
   border: 2px solid white;
 }
-
 /* 1.3.6 ------ closed */
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px 20px 0px 0px;
+  border: 2px solid #f1efef;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 18px 0;
+}
 
-@media (max-width: 600px) {
+.nav-item {
+  color: #444;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+@media (max-width: 1024px) {
   .profile-main {
     padding: 8px;
   }
