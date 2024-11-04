@@ -5,12 +5,12 @@ let btnModal = document.querySelector(".modal button");
 
 // function para abrir o modal
 btn.onclick = function () {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 };
 
 // function para fechar o modal ao verificar que o input está preenchido
 btnModal.onclick = function () {
-  if (document.querySelector(".modal input").value === "") {
+  if (document.querySelector("#textPost").value === "") {
     alert("Preencha o campo");
   } else {
     modal.style.display = "none";

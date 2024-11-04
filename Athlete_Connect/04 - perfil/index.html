@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil(Atleta)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+    rel="icon"
+    href="../images/Athlete_Connect Icon.png"
+    type="image/x-icon"
+  />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perfil(Atleta)</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!--Aqui eu coloquei a foto de perfil, seguidores, bio e enquanto eu escrevo isso, estÃ¡ faltando adicionar o banner-->
 
-<body>
-  <!--Aqui eu coloquei a foto de perfil, seguidores, bio e enquanto eu escrevo isso, estÃ¡ faltando adicionar o banner-->
+    <!-- Banner -->
+    <div class="banner"></div>
+    <main class="main">
+      <header class="header-perfil">
+        <section class="informacao-perfil">
+          <img
+            src="https://blog.reachr.com.br/wp-content/uploads/2018/10/5-licoes-que-atletas-podem-ensinar-para-a-equipe-de-vendas.jpeg"
+            alt="Foto perfil"
+            class="foto-perfil"
+          />
 
-  <!-- Banner -->
-  <div class="banner"></div>
-
-  <header class="header-perfil">
-    <section class="informacao-perfil">
-
-      <img
-        src="https://blog.reachr.com.br/wp-content/uploads/2018/10/5-licoes-que-atletas-podem-ensinar-para-a-equipe-de-vendas.jpeg"
-        alt="Foto perfil" class="foto-perfil" />
-
-
-      <div class="estatisticas-container">
-        <div class="estatisticas">
-          <p><strong>32mil</strong><br />Seguidores</p>
+          <div class="estatisticas-container">
+            <div class="estatisticas">
+              <p><strong>32mil</strong><br />Seguidores</p>
+            </div>
+            <div class="estatisticas">
+              <p><strong>2</strong><br />Seguindo</p>
+            </div>
+          </div>
+        </section>
+        <div class="perfil-detalhes">
+          <h1>Gabriel Rios</h1>
+          <p class="biografia">Instagram: @GabrielRios</p>
         </div>
-        <div class="estatisticas">
-          <p><strong>2</strong><br />Seguindo</p>
-        </div>
-      </div>
-    </section>
-    <div class="perfil-detalhes">
-      <h1>Gabriel Rios</h1>
-      <p class="biografia">Instagram: @GabrielRios</p>
-    </div>
-  </header>
+        <section class="botoes">
+          <button class="botao-seguir">Seguir</button>
+          <button class="botao-mensagem">Mensagem</button>
+          <button class="botao-compartilhar">Compartilhar</button>
+        </section>
+      </header>
 
-  <!--informações e ações do perfil-->
-  <main class="main">
-    <section class="botoes">
-      <button class="botao-seguir">Seguir</button>
-      <button class="botao-mensagem">Mensagem</button>
-      <button class="botao-compartilhar">Compartilhar</button>
-    </section>
-    
-    <!-- Grade para posts do usuario, aqui ainda pode melhorar, se alguem puder ajudar-->
-    <section class="feed" 
-    aria-label="Postagens do usuario">
-      <!-- Postagem 1 -->
-      <hr>     
+      <!--informações e ações do perfil-->
+
+      <!-- Grade para posts do usuario, aqui ainda pode melhorar, se alguem puder ajudar-->
+      <section class="maincontent">
         <article class="postagem">
           <!-- Bloco de postagem -->
           <div class="profilePhoto">
             <!-- Foto de perfil -->
             <img
-              src="https://blog.reachr.com.br/wp-content/uploads/2018/10/5-licoes-que-atletas-podem-ensinar-para-a-equipe-de-vendas.jpeg"
+              src="http://www.logicengenharia.com.br/mcamara/images/mcamara.jpg"
               alt=""
             />
           </div>
           <div class="postagemcontent">
             <!-- Bloco de conteúdo da postagem -->
-            <h4 class="nomePerfil">Gabriel Rios</h4>
+            <h4 class="nomePerfil">GabrielRios</h4>
             <p>Academia vazia</p>
             <img
               src="https://media.istockphoto.com/id/1322158059/pt/foto/dumbbell-water-bottle-towel-on-the-bench-in-the-gym.jpg?s=612x612&w=0&k=20&c=eFfg0ECbiSopufODZ0Kz6yKTXvay0pXQpwJaUXxpBoc=  "
@@ -138,7 +138,7 @@
               <!-- ---- -->
               <!-- comment img -->
               <img
-                src="Imagens/commentButton.svg"
+                src="../01 - telas principais/assets/images/commentButton.svg"
                 alt="iconamoon-comment"
                 border="0"
               />
@@ -158,8 +158,8 @@
                   alt=""
                 />
               </div>
-              <p>2K <br />comentarios</p>
-              <p>14K <br />curtidas</p>
+              <p>13K <br />coments</p>
+              <p>1K <br />curtidas</p>
             </div>
           </div>
           <div class="configPostagem">
@@ -170,134 +170,128 @@
             />
           </div>
         </article>
-      
-   
-      <!-- ---- -->
-
-      <!-- Postagem 2 -->
-      <article class="postagem">
-        <!-- Bloco de postagem -->
-        <div class="profilePhoto">
-          <!-- Foto de perfil -->
-          <img
-            src="https://blog.reachr.com.br/wp-content/uploads/2018/10/5-licoes-que-atletas-podem-ensinar-para-a-equipe-de-vendas.jpeg"
-            alt=""
-          />
-        </div>
-        <div class="postagemcontent">
-          <!-- Bloco de conteúdo da postagem -->
-          <h4 class="nomePerfil">Gabriel Rios</h4>
-          <p>Treinão hoje!</p>
-          <img
-            src="https://media.istockphoto.com/id/636887598/pt/foto/atleta-de-corrida.jpg?s=612x612&w=0&k=20&c=zevfrnWApWDvcYRinqLh7iB1GhdvwyuWtICeMHWmOWQ="
-            alt=""
-          />
-          <div class="iconsPostagem">
-            <!-- botao de like -->
-            <input type="checkbox" id="checkbox" />
-            <label for="checkbox">
-              <svg
-                id="heart-svg"
-                viewBox="467 392 58 57"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g
-                  id="Group"
-                  fill="none"
-                  fill-rule="evenodd"
-                  transform="translate(467 392)"
-                >
-                  <path
-                    d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                    id="heart"
-                    fill="none"
-                    stroke="#505050"
-                    stroke-width="3"
-                  />
-                  <circle
-                    id="main-circ"
-                    fill="#FF0000"
-                    opacity="0"
-                    cx="29.5"
-                    cy="29.5"
-                    r="1.5"
-                  />
-
-                  <g id="grp7" opacity="0" transform="translate(7 6)">
-                    <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                    <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-                  </g>
-
-                  <g id="grp6" opacity="0" transform="translate(0 28)">
-                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                    <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-                  </g>
-
-                  <g id="grp3" opacity="0" transform="translate(52 28)">
-                    <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                    <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-                  </g>
-
-                  <g id="grp2" opacity="0" transform="translate(44 6)">
-                    <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                    <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-                  </g>
-
-                  <g id="grp5" opacity="0" transform="translate(14 50)">
-                    <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                    <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-                  </g>
-
-                  <g id="grp4" opacity="0" transform="translate(35 50)">
-                    <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                    <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-                  </g>
-
-                  <g id="grp1" opacity="0" transform="translate(24)">
-                    <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                    <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-                  </g>
-                </g>
-              </svg>
-            </label>
-            <!-- ---- -->
-            <!-- comment img -->
+        <!-- postagem 2 -->
+        <article class="postagem">
+          <!-- Bloco de postagem -->
+          <div class="profilePhoto">
+            <!-- Foto de perfil -->
             <img
-              src="Imagens/commentButton.svg"
-              alt="iconamoon-comment"
+              src="http://www.logicengenharia.com.br/mcamara/images/mcamara.jpg"
+              alt=""
+            />
+          </div>
+          <div class="postagemcontent">
+            <!-- Bloco de conteúdo da postagem -->
+            <h4 class="nomePerfil">GabrielRios</h4>
+            <p>Academia vazia</p>
+            <img
+              src="https://media.istockphoto.com/id/1322158059/pt/foto/dumbbell-water-bottle-towel-on-the-bench-in-the-gym.jpg?s=612x612&w=0&k=20&c=eFfg0ECbiSopufODZ0Kz6yKTXvay0pXQpwJaUXxpBoc=  "
+              alt=""
+            />
+            <div class="iconsPostagem">
+              <!-- botao de like -->
+              <input type="checkbox" id="checkbox" />
+              <label for="checkbox">
+                <svg
+                  id="heart-svg"
+                  viewBox="467 392 58 57"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    id="Group"
+                    fill="none"
+                    fill-rule="evenodd"
+                    transform="translate(467 392)"
+                  >
+                    <path
+                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                      id="heart"
+                      fill="none"
+                      stroke="#505050"
+                      stroke-width="3"
+                    />
+                    <circle
+                      id="main-circ"
+                      fill="#FF0000"
+                      opacity="0"
+                      cx="29.5"
+                      cy="29.5"
+                      r="1.5"
+                    />
+
+                    <g id="grp7" opacity="0" transform="translate(7 6)">
+                      <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+                      <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+                    </g>
+
+                    <g id="grp6" opacity="0" transform="translate(0 28)">
+                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+                      <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
+                    </g>
+
+                    <g id="grp3" opacity="0" transform="translate(52 28)">
+                      <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+                      <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+                    </g>
+
+                    <g id="grp2" opacity="0" transform="translate(44 6)">
+                      <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
+                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
+                    </g>
+
+                    <g id="grp5" opacity="0" transform="translate(14 50)">
+                      <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
+                      <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
+                    </g>
+
+                    <g id="grp4" opacity="0" transform="translate(35 50)">
+                      <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
+                      <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
+                    </g>
+
+                    <g id="grp1" opacity="0" transform="translate(24)">
+                      <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
+                      <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
+                    </g>
+                  </g>
+                </svg>
+              </label>
+              <!-- ---- -->
+              <!-- comment img -->
+              <img
+                src="../01 - telas principais/assets/images/commentButton.svg"
+                alt="iconamoon-comment"
+                border="0"
+              />
+            </div>
+            <div class="estatisticasPostagem">
+              <div class="pessoas">
+                <img
+                  src="http://www.logicengenharia.com.br/mcamara/images/mcamara.jpg"
+                  alt=""
+                />
+                <img
+                  src="http://www.logicengenharia.com.br/mcamara/images/mcamara.jpg"
+                  alt=""
+                />
+                <img
+                  src="http://www.logicengenharia.com.br/mcamara/images/mcamara.jpg"
+                  alt=""
+                />
+              </div>
+              <p>13K <br />coments</p>
+              <p>1K <br />curtidas</p>
+            </div>
+          </div>
+          <div class="configPostagem">
+            <img
+              src="https://i.ibb.co/c3hZ8b4/grommet-icons-more.png"
+              alt="grommet-icons-more"
               border="0"
             />
           </div>
-          <div class="estatisticasPostagem">
-            <div class="pessoas">
-              <img
-                src="http://www.logicengenharia.com.br/mcamara/images/mcamara.jpg"
-                alt=""
-              />
-              <img
-                src="http://www.logicengenharia.com.br/mcamara/images/mcamara.jpg"
-                alt=""
-              />
-              <img
-                src="http://www.logicengenharia.com.br/mcamara/images/mcamara.jpg"
-                alt=""
-              />
-            </div>
-            <p>1K <br />comentarios</p>
-            <p>10K <br />curtidas</p>
-          </div>
-        </div>
-        <div class="configPostagem">
-          <img
-            src="https://i.ibb.co/c3hZ8b4/grommet-icons-more.png"
-            alt="grommet-icons-more"
-            border="0"
-          />
-        </div>
-      </article>
-
-    <hr />
-  </main>
-</body>
-
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
