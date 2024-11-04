@@ -19,31 +19,59 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .qr-code{
-          height: 50px;
-            margin-left: 300px;
-            margin-top: -100px;
-        }
-
         .header {
             text-align: center;
             margin-bottom: 20px;
         }
 
-        .header img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
+        .header h1 {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        .header h2 {
-            font-size: 30px;
-            margin: 10px 0;
+        .header img {
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .header h1 {
+            width: 180.769px;
+            height: 27.047px;
+            margin-left: 60px;  
+        }
+
+        .seu-perfil {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .seta-voltar img{
+            width: 40.333px;
+            height: 16.667px;
+            display: flex;
+        }
+
+        .seu-perfil h2 {
+            text-align: center;
+        }
+
+        .seu-perfil img {
+            width: 40px;
+            height: 30.038px;
+        }
+
+        .qr-code img {
+            height: 30px;
+            width: 50;
         }
 
         .lista-configuracoes {
             list-style: none;
-            margin-left: -50px  ;
+            margin-left: -50px;
         }
 
         .campos-itens {
@@ -55,21 +83,28 @@
             transition: background-color 0.3s;
         }
 
+        .campos-itens a {
+            font-size: 16px;
+        }
+
         .campos-itens:hover {
             background-color: #f0f0f0;
         }
-        .icone-imagem-1{
+
+        .icone-imagem-1 {
             width: 50px;
             height: 40px;
             margin-right: 5px;
             margin-left: 30px;
         }
-        .icone-imagem-2{
+
+        .icone-imagem-2 {
             width: 50px;
             height: 60px;
             margin-right: 5px;
             margin-left: 30px;
         }
+
         .campos-itens svg {
             width: 24px;
             height: 24px;
