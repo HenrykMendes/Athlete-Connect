@@ -7,13 +7,22 @@ let btnNext = document.querySelector(".submitbutton button");
 
 // Validação dos campos de input do formulário de login
 btnNext.onclick = function () {
+  let qtd = 0;
+  inputs.forEach((input) => {
+    qtd++;
+  });
   inputs.forEach((input) => {
     if (input.value === "") {
       alert("Preencha todos os campos");
+    } else {
+      qtd--;
     }
   });
-};
 
+  if (qtd === 0) {
+    window.location.href = "../../01 - telas principais/01 - para voce/index.html";
+  }
+};
 // function para abrir o modal
 btn.onclick = function () {
   modal.style.display = "block";
