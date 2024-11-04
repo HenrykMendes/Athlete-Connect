@@ -1,93 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enviar Doação</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link
-  rel="icon"
-  href="../images/Athlete_Connect Icon.png"
-  type="image/x-icon"
-/>
-</head>
-<body>
-  
-<div>
-  <a href="../04 - perfil/index.html" >
-    <i style="font-size:24px" class="fa">&#xf104;</i>
-  </a>
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviar Doação</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="../images/Athlete_Connect Icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="../04 - perfil/index.html">
+        <i style="font-size: 24px" class="fa">&#xf104;</i>
+      </a>
+    </div>
 
-<div>
-  <img src="../images/Athlete_Connect Icon.png" alt="Ícone do App">
-</div>
+    <img
+      class="boneco"
+      src="https://i.ibb.co/g9rGQxK/boneco.png"
+      alt="boneco"
+      border="0"
+    />
 
-<div>
-  <h2>Valor da doação:</h2>
-</div>
-<form id="donate" action="#">
+    <form id="donate" action="#">
+      <div id="doacoesFixas">
+        <h2>Valor da doação:</h2>
+        <button class="opc">R$ 10</button>
+        <button class="opc">R$ 20</button>
+        <button class="opc">R$ 50</button>
+        <button class="opc">R$ 80</button>
+        <button class="opc">R$ 100</button>
+        <button class="opc">R$ 150</button>
+      </div>
+      <br />
 
-  <div id="doacoesFixas">
+      <div id="doacaoRecorrente">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <label for="">Doação Recorrente</label>
+      </div>
+      <br />
+      <div id="doacaoAnonima">
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <label for="">Doação Anônima</label>
+      </div>
 
-    <button>
-      R$ 10
-    </button>
-
-    <button>
-      R$ 20
-    </button>
-
-    <button>
-      R$ 50
-    </button>
-
-    <button>
-      R$ 80
-    </button>
-
-    <button>
-      R$ 100
-    </button>
-
-    <button>
-      R$ 150
-
-    </button>
-
-  </div>
-  <br>
-
-<div id="doacaoRecorrente">
-<label  class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
-<label for="">Doação Recorrente</label>
-</div>  
-<br>
-<div id="doacaoAnonima">
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label>
-  <label for="">Doação Anônima</label>
-</div>
-
-<div>
-  <h3>Outro valor:</h3>
-</div>
-
-<div>
-  <input type="number" >
-</div>
-
-<br>
-
-<button type="submit">Realizar Doação</button>
-
-</form>
-
-</body>
+      <div>
+        <h3>Outro valor:</h3>
+      </div>
+      <input type="number" placeholder="  R$:" />
+      <br />
+      <button class="finalizar" type="button">Realizar Doação</button>
+    </form>
+  </body>
 </html>
