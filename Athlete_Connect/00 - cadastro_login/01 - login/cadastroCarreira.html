@@ -41,7 +41,7 @@
       </form>
 
       <section class="loginpage">
-        <p>Já possui Conta? <a href="./index.html">Faça Login!</a></p>
+        <p>Já possui Conta? <a href="./login.html">Faça Login!</a></p>
       </section>
     </main>
 
@@ -50,9 +50,9 @@
         e.preventDefault();
         let opcao = document.forms["opcforms"]["opcoes"].value;
         if (opcao == "investidor") {
-          window.location.href = "./loginInvestidor.html";
+          window.location.href = "./cadastroInvestidor.html";
         } else {
-          window.location.href = "./loginOrg.html";
+          window.location.href = "./cadastroOrg.html";
         }
       });
     </script>

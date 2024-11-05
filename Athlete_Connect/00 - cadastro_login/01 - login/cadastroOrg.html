@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login_Atleta</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <title>Login_Organizacao</title>
+    <link rel="stylesheet" href="./assets/style.css" />
     <link
     rel="icon"
     href="../images/Athlete_Connect Icon.png"
@@ -28,30 +28,29 @@
           alt="boneco"
           border="0"
         />
-        <h1>Bem vindo,</h1>
-        <h1 class="titleGreen">Atleta</h1>
+        <h1>Registre uma</h1>
+        <h1 class="titleGreen">Organização</h1>
       </section>
 
       <section class="forms">
-        <input type="text" placeholder="CPF/CNPJ" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Senha" />
-        <input  type="text" placeholder="Telefone" />
-        <input  type="text" placeholder="Informe seu esporte" />
-
+        <input type="text" placeholder="CPF/CNPJ" required/>
+        <input type="email" placeholder="Email" required/>
+        <input type="text" placeholder="Nome do Perfil" required/>
+        <input type="password" placeholder="Senha" required/>
       </section>
-   
 
       <section class="loginpage">
-        <p>Já possui Conta?
-        <a href="./index.html">Faça Login!</a></p>
+        <p>Já possui Conta? <a href="./login.html">Faça Login!</a></p>
       </section>
 
       <div class="submitbutton">
-        <button class="botaoPrincipal" type="button">CRIAR CONTA</button>
+        <a href="./cadastroOrg2.html">
+          <button class="botaoPrincipal" type="button">AVANÇAR</button>
+        </a>
       </div>
     </main>
 
-    <script src="./assets/returnToLogin.js"></script>
+    <script>
+    </script>
   </body>
 </html>

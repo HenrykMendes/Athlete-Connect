@@ -117,3 +117,18 @@ input {
   text-align: center;
   margin-left: 78px;
 }
+
+.logo{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.check{
+  width: 170px;
+  text-align: center;
+  margin-left: 90px;
+}
+

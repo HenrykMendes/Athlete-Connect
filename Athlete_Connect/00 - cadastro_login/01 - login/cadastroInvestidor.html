@@ -33,41 +33,23 @@
       </section>
 
       <section class="forms">
-        <input type="text" placeholder="CPF/CNPJ" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Senha" />
+        <input type="text" placeholder="CPF/CNPJ" required/>
+        <input type="email" placeholder="Email" required/>
+        <input type="password" placeholder="Senha" required/>
       </section>
 
       <section class="loginpage">
-        <p>Já possui Conta? <a href="./index.html">Faça Login!</a></p>
+        <p>Já possui Conta? <a href="./login.html">Faça Login!</a></p>
       </section>
 
       <div class="submitbutton">
-        <button class="botaoPrincipal" type="button">AVANÇAR</button>
+        <a href="./cadastroInvestidor2.html">
+          <button class="botaoPrincipal" type="button">AVANÇAR</button>
+        </a>
       </div>
     </main>
 
     <script>
-      let btnNext = document.querySelector(".submitbutton button");
-      let inputs = document.querySelectorAll(".forms input");
-
-      btnNext.onclick = function () {
-        let qtd = 0;
-        inputs.forEach((input) => {
-          qtd++;
-        });
-        inputs.forEach((input) => {
-          if (input.value === "") {
-            alert("Preencha todos os campos");
-          } else {
-            qtd--;
-          }
-        });
-        
-        if (qtd === 0) {
-          window.location.href = "./loginInvestidor2.html";
-        }
-      };
     </script>
   </body>
 </html>
