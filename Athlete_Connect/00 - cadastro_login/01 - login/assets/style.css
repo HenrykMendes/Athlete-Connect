@@ -45,6 +45,7 @@ main h1 {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.22px;
+  margin-top: 10px;
 }
 .loginpage p {
   margin-bottom: 0;

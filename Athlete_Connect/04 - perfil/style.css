@@ -16,6 +16,11 @@ body {
   background-image: url("https://img.freepik.com/fotos-gratis/halteres-no-chao-de-uma-academia-ai-generative_123827-23743.jpg");
   background-position: center;
 }
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 main {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -63,17 +68,23 @@ main {
 }
 
 .perfil-detalhes {
+  display: flex;
+  width: 88%;
+  justify-content: space-between;
+  align-items: center;
   margin-left: 20px;
   color: #000;
 
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .perfil-detalhes h1 {
-  font-size: 1.5rem;
-
+  font-size: 19px;
+}
+.perfil-detalhes p {
+  font-size: 15px;
 }
 
 .botoes {
@@ -96,7 +107,7 @@ main {
 
 .botao-seguir {
   text-decoration: none;
-  background-color: #1dca02;
+  background-color: #00bf1f;
   color: white;
   border-radius: 20px;
   padding: 9px 30px;
@@ -104,22 +115,36 @@ main {
 
 .botao-mensagem {
   text-decoration: none;
-  border: 2px solid #1dca02;
+  border: 2px solid #00bf1f;
   background-color: white;
-  color: #1dca02;
+  color: #00bf1f;
   border-radius: 30px;
   transition: border-color 0.3s ease;
 }
 .botao-compartilhar {
   text-decoration: none;
-  border: 2px solid #1dca02;
+  border: 2px solid #00bf1f;
   background-color: white;
-  color: #1dca02;
+  color: #00bf1f;
   border-radius: 30px;
 }
 
 .maincontent{
+
   width: 100%;
+
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 10px;
+}
+.maincontent2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 50%;
   max-width: 600px;
   margin: 0px auto;
   padding: 10px;
@@ -130,7 +155,7 @@ main {
   /* bloco principal da postagem  */
   display: flex;
   gap: 8px;
-  padding: 20px 18px 10px 18px;
+  padding: 10px 8px 10px 10px;
   border-bottom: 2px solid #d9d9d9;
   
 }
@@ -434,7 +459,7 @@ svg {
   justify-content: space-around;
   border-radius: 20px 20px 0px 0px;
   border: 2px solid #f1efef;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgb(255, 255, 255);
   padding: 18px 0;
 }
 

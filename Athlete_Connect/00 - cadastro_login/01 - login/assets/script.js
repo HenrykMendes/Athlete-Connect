@@ -23,6 +23,7 @@ btnNext.onclick = function () {
     window.location.href = "../../01 - telas principais/01 - para voce/index.html";
   }
 };
+
 // function para abrir o modal
 btn.onclick = function () {
   modal.style.display = "block";
