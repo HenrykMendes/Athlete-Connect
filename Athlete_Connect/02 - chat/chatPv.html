@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Verde</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <header>
+    <a href="group.html">
+      <div>
+        <img src="../images/BackSymbol.svg" alt="" />
+      </div>
+    </a>
+    <img src="https://media.istockphoto.com/id/636887598/pt/foto/atleta-de-corrida.jpg?s=612x612&w=0&k=20&c=zevfrnWApWDvcYRinqLh7iB1GhdvwyuWtICeMHWmOWQ=" alt="">
+    <h3>João Henrique</h3>
+  </header>  
+   
+    <section class="chat-container">
+      <!-- Área das mensagens -->
+      <hr>
+      <div class="chat-box" id="chatBox">
+            <!-- Mensagens iniciais -->
+            <div class="message received">
+                <div class="content">Olá! Como posso te ajudar?</div>
+            </div>
+            <div class="message received">
+                <div class="content">Oi! Preciso de ajuda com um projeto.</div>
+            </div>
+            <div class="message received">
+                <div class="content">Claro! Me fale mais sobre o que precisa.</div>
+            </div>
+        </div>
 
-  <label for="">Mensagem</label>
-  <input type="text" id="msgTxt">
-<br>
-<br>
-  <label for="">Imagem</label>
-<input type="file" id="msgImg">
-<br>
-<br>
-<button onclick="chatOperation()">
-  Enviar
-</button>
-
-<br>
-<br>
-
-<div id="msgAppear">
-
-</div>
-
-
-<img src="" id="imgAppear" alt="" >
-
-  <script src="chat.js">
-  </script>
+        <!-- Área de entrada de texto e imagem -->
+        <div class="input-container">
+            <input type="text" id="msgTxt" class="input-mensagem" placeholder="Digite sua mensagem...">
+            <input type="file" id="msgImg" accept="image/*" style="display: none;">
+            <button onclick="document.getElementById('msgImg').click()" class="botao-anexar">📎</button>
+            <button onclick="chatOperation()" class="botao-enviar">Enviar</button>
+        </div>
+      </section>
+    
+    <script src="chat.js"></script>
 </body>
 </html>

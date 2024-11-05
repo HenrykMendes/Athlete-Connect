@@ -1,0 +1,140 @@
+/* root ou geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:white
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+header img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: -7px;
+    margin-right: 2px;
+    
+}
+/* Container Principal do Chat */
+.chat-container {
+    width: 100%;
+    max-width: 400px;
+    height: 90vh;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Área das Mensagens */
+.chat-box {
+    flex-grow: 4;
+    padding: 16px;
+    background-color: white;
+    margin-right: -150px;
+}
+
+/* Estilos das Mensagens */
+.message {
+    display: flex;
+    margin-bottom: 12px;
+    max-width: 70%;
+}
+
+.message .content {
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Mensagem Enviada */
+.message.sent {
+    justify-content: flex-end;    
+}
+
+.message.sent .content {
+    background-color: #dcf8c6; /* Verde claro do WhatsApp */
+    color: #333;
+    border-radius: 15px 15px 0 15px;
+}
+
+/* Mensagem Recebida */
+.message.received {
+    justify-content: flex-start;
+}
+
+.message.received .content {
+    background-color: #ffffff; /* Fundo branco */
+    color: #333;
+    border-radius: 15px 15px 15px 0;
+    border: 1px solid #e0e0e0; /* Borda leve */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+.message.received .content:hover {
+    background-color: #f9f9f9; /* Fundo levemente cinza ao passar o mouse */
+}
+
+
+/* Área de Entrada */
+.input-container {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: #ffffff;
+    border-top: 1px solid #d4d4d4;
+}
+
+/* espaço pra digitar */
+.input-mensagem {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+
+.botao-enviar {
+    background-color: #25d366; /* Verde do WhatsApp */
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: #128c7e;
+}
+
+/* Botão de anexar imagem */
+.botao-anexar {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 8px;
+}
