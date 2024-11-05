@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 375px;
+    height: 812px;
+    position: relative;
+    background: #F5F5F5;
+  }
+  
+  .header {
+    width: 365px;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .time {
+    color: #171717;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 84px;
+    left: 24px;
+    color: #333333;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.56px;
+  }
+  
+  .months {
+    position: absolute;
+    top: 133px;
+    left: 24px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .month {
+    padding: 6px 9px;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #333333;
+    letter-spacing: 0.7px;
+  }
+  
+  .selected {
+    background: #00BF1F;
+  }
+  
+  .donation-list {
+    position: absolute;
+    top: 182px;
+    left: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .donation-item {
+    width: 327px;
+    padding: 16px;
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .donation-info {
+    width: 70%;
+  }
+  
+  .donor {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .date {
+    color: #858585;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.28px;
+  }
+  
+  .amount {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+  }  
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid #f1efef;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 18px 0;
+  }
