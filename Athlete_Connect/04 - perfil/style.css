@@ -446,6 +446,13 @@ svg {
   align-items: center;
   font-size: 12px;
 }
+
+.search{
+  padding: 69px;
+    text-align: center;
+    
+}
+
 @media (max-width: 1024px) {
   .profile-main {
     padding: 8px;
