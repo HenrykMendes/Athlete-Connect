@@ -41,6 +41,8 @@ main {
   display: flex;
   gap: 20px;
   align-items: center;
+
+  object-fit: cover;
 }
 
 .foto-perfil {
@@ -89,10 +91,11 @@ main {
 
 .botoes {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   margin: 15px 0px;
+  padding: 0px 3px;
 }
 
 .botao-seguir,
@@ -440,6 +443,8 @@ svg {
   display: flex;
   gap: 3px;
   align-items: center;
+
+  
 }
 .estatisticasPostagem .pessoas img {
   width: 30px;
@@ -447,6 +452,8 @@ svg {
   border-radius: 50%;
   margin-left: -15px;
   border: 2px solid white;
+
+  object-fit: cover;
 }
 /* 1.3.6 ------ closed */
 /* Bottom Navigation Bar */
