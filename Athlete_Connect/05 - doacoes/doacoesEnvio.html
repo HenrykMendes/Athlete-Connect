@@ -16,53 +16,58 @@
     />
   </head>
   <body>
-    <div>
-      <a href="../04 - perfil/VistoPorInvestidor.html">
-        <i style="font-size: 24px" class="fa">&#xf104;</i>
-      </a>
-    </div>
-
-    <img
-      class="boneco"
-      src="https://i.ibb.co/g9rGQxK/boneco.png"
-      alt="boneco"
-      border="0"
-    />
-
-    <form id="donate" action="#">
-      <div id="doacoesFixas">
-        <h2>Valor da doação:</h2>
-        <button class="opc">R$ 10</button>
-        <button class="opc">R$ 20</button>
-        <button class="opc">R$ 50</button>
-        <button class="opc">R$ 80</button>
-        <button class="opc">R$ 100</button>
-        <button class="opc">R$ 150</button>
-      </div>
-      <br />
-
-      <div id="doacaoRecorrente">
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
-        <label for="">Doação Recorrente</label>
-      </div>
-      <br />
-      <div id="doacaoAnonima">
-        <label class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
-        <label for="">Doação Anônima</label>
+    <main>
+      <div class="exit">
+        <a href="../04 - perfil/VistoPorInvestidor.html">
+          <i style="font-size: 40px" class="fa">&#xf104;</i>
+        </a>
       </div>
 
-      <div>
-        <h3>Outro valor:</h3>
-      </div>
-      <input type="number" placeholder="  R$:" />
-      <br />
-      <button class="finalizar" type="button">Realizar Doação</button>
-    </form>
+      <img
+        class="boneco"
+        src="https://i.ibb.co/g9rGQxK/boneco.png"
+        alt="boneco"
+        border="0"
+      />
+
+      <form id="donate" action="#">
+        <div id="doacoesFixas">
+          <h2>Valor da doação:</h2>
+          <button class="opc">R$ 10</button>
+          <button class="opc">R$ 20</button>
+          <button class="opc">R$ 50</button>
+          <button class="opc">R$ 80</button>
+          <button class="opc">R$ 100</button>
+          <button class="opc">R$ 150</button>
+        </div>
+        <br />
+
+        <div class="doacoesbox">
+          <div id="doacaoRecorrente" class="doacaoUnit">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <label for="">Doação Recorrente</label>
+          </div>
+  
+          <div id="doacaoAnonima" class="doacaoUnit">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <label for="">Doação Anônima</label>
+          </div>
+        </div>
+        
+
+        <div>
+          <h3>Outro valor:</h3>
+        </div>
+        <input type="number" placeholder="  R$:" />
+        <br />
+        <button class="finalizar" type="button">Realizar Doação</button>
+      </form>
+    </main>
   </body>
 </html>
