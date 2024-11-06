@@ -118,12 +118,21 @@ header img{
 .botao-enviar {
     background-color: #25d366; /* Verde do WhatsApp */
     color: #ffffff;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     padding: 10px 16px;
-    border-radius: 50%;
+    border-radius: 15px;
     font-size: 14px;
     cursor: pointer;
     transition: 0.3s;
+}
+.botao-enviar img {
+    width: 20px;
+    height: 20px;
 }
 
 .botao-enviar:hover {
