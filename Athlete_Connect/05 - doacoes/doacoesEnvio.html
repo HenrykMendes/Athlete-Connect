@@ -39,7 +39,7 @@
         <button class="opc">R$ 100</button>
         <button class="opc">R$ 150</button>
       </div>
-      <br />
+      
 
       <div id="doacaoRecorrente">
         <label class="switch">
@@ -57,12 +57,24 @@
         <label for="">Doação Anônima</label>
       </div>
 
-      <div>
+      <div class="texto-valor">
         <h3>Outro valor:</h3>
       </div>
       <input type="number" placeholder="  R$:" />
       <br />
+      <a href="TelasPagamento/telaPagamento.html">
       <button class="finalizar" type="button">Realizar Doação</button>
+    </a>
     </form>
+    <script>
+      const buttons = document.querySelectorAll(".opc");
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((btn) => btn.classList.remove("selected"));
+          button.classList.add("selected");
+        });
+      });
+    </script>
+    
   </body>
 </html>

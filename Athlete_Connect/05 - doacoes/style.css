@@ -9,6 +9,7 @@
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin-left: 20px;
 }
 
 .switch input {
@@ -62,7 +63,9 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
+.texto-valor{
+  margin-left: 25px;
+}
 .finalizar {
   width: 303px;
   height: 47px;
@@ -76,6 +79,8 @@ input:checked + .slider:before {
   cursor: pointer;
   text-align: center;
   margin-left: 30px;
+  align-items: center
+  ;
 }
 
 .finalizar:hover {
@@ -137,4 +142,20 @@ input {
   text-align: center;
   margin-left: 90px;
 }
+/* Estilo padrão dos botões */
+.opc {
+  background-color: #fffffff7; 
+  color: #333; 
+  border: 1px solid #00ff22;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.opc.selected {
+  background-color: #00ff22; 
+  color: #fff; 
+}
+
 
