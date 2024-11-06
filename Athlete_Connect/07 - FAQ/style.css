@@ -23,7 +23,12 @@
   .topnav .search-container button:hover {
     background: #ccc;
   }
-  
+  .base{
+    width: 138.46px; 
+    height: 111.60px; 
+    background: #DFF1FF; 
+    border-radius: 8px;
+  }
 
 
   
