@@ -1,29 +1,110 @@
-.topnav .search-container {
-    float: right;
-  }
-  
-  .topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-  }
-  
-  .topnav .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .topnav .search-container button:hover {
-    background: #ccc;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+  padding: 16px;
+}
 
-  
+div:first-child img {
+  width: 24px;
+  cursor: pointer;
+}
+.faqheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqheader h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-right: 160px;
+}
+.faqheader a img {
+  width: 60px;
+  height: 60px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 16px;
+}
+
+/* Barra de pesquisa */
+.topnav {
+  display: flex;
+  margin-top: 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.topnav form {
+  display: flex;
+  width: 100%;
+}
+
+.topnav input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.topnav button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+.faqheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perguntas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.helpBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px;
+
+  width: 138px;
+  height: 111px;
+  border-radius: 8px;
+  background: var(--Light-BG-4, #DFF1FF);
+}
