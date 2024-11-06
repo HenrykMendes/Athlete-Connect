@@ -1,0 +1,22 @@
+*{
+    text-align: center;
+    margin-left: 50px;
+}
+
+.header{
+    display: flex;
+}
+
+.stats{
+    width: 207px;
+    height: 246px;
+}
+
+.cardio{
+    width: 374px;
+    height: 279px;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
