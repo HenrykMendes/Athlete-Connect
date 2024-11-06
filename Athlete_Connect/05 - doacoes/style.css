@@ -112,6 +112,88 @@ input:checked + .slider:before {
   margin-left: 8px;
 }
 
+/* css do modal de redefinição de senha */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  /* alinhe no meio da tela */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 305px;
+  height: auto;
+  padding: 20px;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal input {
+  width: 95%;
+  height: 47px;
+  flex-shrink: 0;
+  background-color: #f7fdff;
+  border: 1px solid #cdcdcd;
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-content span.close {
+  display: inline-block;
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.modal h4 {
+  font-size: 20px;
+  color: #03af50;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.modal button {
+  width: 95%;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.modal input::placeholder {
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* css dos botões principais */
+.botaoPrincipal {
+  width: 303px;
+  height: 47px;
+  margin-top: 40px;
+  background-color: #07da65;
+  border: none;
+  border-radius: 25px;
+  color: #2c2c2c;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.botaoPrincipal:hover {
+  box-shadow: 0 0 0 0.2rem rgba(7, 218, 101, 0.25);
+  background: #07da65;
+  transition: 0.3s;
+}
 /* doacoes */
 .doacoesbox {
   display: flex;
