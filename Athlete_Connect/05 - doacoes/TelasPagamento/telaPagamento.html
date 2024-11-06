@@ -1,61 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tela de Pagamento</title>
-  <link rel="stylesheet" href="stylePagar.css">
-</head>
-<body>
-  <div class="payment-container">
-    
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Pagamento</title>
+    <link rel="stylesheet" href="stylePagar.css" />
+  </head>
+  <body>
+    <div class="payment-container">
       <a href="../doacoesEnvio.html" class="voltar">
         <div>
           <img src="../imagens/BackSymbol.svg" alt="" />
         </div>
-      </a>      
-     
-    <h2>Formas de Pagamento</h2>
+      </a>
 
-    <div class="credit-card-box">
-      <div class="card">
-        <div class="front">
-          <div class="logo">
-            <span>VISA</span>
-          </div>
-          <div class="number">1234 5678 9012 3456</div>
-          <div class="name">NOME DO TITULAR</div>
-          <div class="expiration">
-            <span class="label">Válido até</span>
-            <span class="date">12/24</span>
+      <h2>Formas de Pagamento</h2>
+
+      <div class="credit-card-box">
+        <div class="card">
+          <div class="front">
+            <div class="logo">
+              <span>VISA</span>
+            </div>
+            <div class="number">1234 5678 9012 3456</div>
+            <div class="name">NOME DO TITULAR</div>
+            <div class="expiration">
+              <span class="label">Válido até</span>
+              <span class="date">12/24</span>
+            </div>
           </div>
         </div>
       </div>
+
+      <form class="payment-form">
+        <label for="card-number">Número do Cartão</label>
+        <input
+          type="text"
+          id="card-number"
+          placeholder="1234 5678 9012 3456"
+          maxlength="19"
+          required
+        />
+
+        <label for="card-holder">Nome do Titular</label>
+        <input
+          type="text"
+          id="card-holder"
+          placeholder="Nome Completo"
+          required
+        />
+
+        <div class="row">
+          <div class="col">
+            <label for="expiry-date">Validade</label>
+            <input
+              type="text"
+              id="expiry-date"
+              placeholder="MM/AA"
+              maxlength="5"
+              required
+            />
+          </div>
+          <div class="col">
+            <label for="cvv">CVV</label>
+            <input
+              type="text"
+              id="cvv"
+              placeholder="123"
+              maxlength="3"
+              required
+            />
+          </div>
+        </div>
+        <a href="../doacaoRealizada.html">
+        <label for="amount">Valor</label>
+        <input type="text" id="amount" placeholder="R$ 100,00" required />
+        
+          <button type="submit" class="btn">Pagar agora</button>
+        </a>
+      </form>
     </div>
-
-    <form class="payment-form">
-      <label for="card-number">Número do Cartão</label>
-      <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" required>
-
-      <label for="card-holder">Nome do Titular</label>
-      <input type="text" id="card-holder" placeholder="Nome Completo" required>
-
-      <div class="row">
-        <div class="col">
-          <label for="expiry-date">Validade</label>
-          <input type="text" id="expiry-date" placeholder="MM/AA" maxlength="5" required>
-        </div>
-        <div class="col">
-          <label for="cvv">CVV</label>
-          <input type="text" id="cvv" placeholder="123" maxlength="3" required>
-        </div>
-      </div>
-
-      <label for="amount">Valor</label>
-      <input type="text" id="amount" placeholder="R$ 100,00" required>
-
-      <button type="submit" class="btn">Pagar agora</button>
-    </form>
-  </div>
-</body>
+  </body>
 </html>
