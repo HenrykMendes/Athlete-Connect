@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estatísticas</title>
-    <link rel="stylesheet" href="../04 - perfil/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div  class="header">
+    <header>
         <a href="../01 - telas principais/01 - para voce/paraVoce.html">
-        <img src="../images/ic_round-arrow-back-ios.png" alt="seta">
-    </a>
+          <div>
+            <img src="../images/BackSymbol.svg" alt="" />
+          </div>
+        </a>
         <h1>Estatísticas</h1>
-    </div>
-    <div class="stats">
-        <img src="../images/estatisticas.png" alt="stats">
-    </div>
-    <div class="cardio">
-        <img src="../images/batimentos.png" alt="cardio">
-    </div>
+      </header>
+    <main>
+        
+    
+    <section class="stats">
+        <div class="stat-card">
+            <h2>Temporada atual</h2>
+            <canvas id="userChart"></canvas>
+        </div>
+        
+        <div class="stat-card">
+            <h2>Batimentos cardiacos</h2>
+            <canvas id="donationChart"></canvas>
+        </div>
+    </section>
+</main>
+    <script src="script.js"></script>
 </body>
 </html>

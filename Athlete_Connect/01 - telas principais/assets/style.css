@@ -72,8 +72,8 @@ main {
 
 /* 1 - conteúdo principal */
 .maincontent {
-  margin: 93px 0px 0px 0px;/* margin para compensar o header */
-
+  margin: 93px 0px 0px 0px; /* margin para compensar o header */
+ 
 }
 
 /* 1.1 - css dos blocos de postagem */
@@ -84,6 +84,9 @@ main {
   width: 100%;
   padding: 20px 18px 10px 18px;
   border-bottom: 2px solid #d9d9d9;
+}
+.postagem:last-child {
+  margin-bottom: 70px; /* ajuste conforme o tamanho da bottom-nav */
 }
 /* 1.2 - FOTO DE PERFIL */
 .profilePhoto img {
@@ -408,7 +411,6 @@ svg {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  
 }
 
 .modal-content span.close {
@@ -428,7 +430,7 @@ svg {
   justify-content: flex-start;
 }
 
-.headerPost{
+.headerPost {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -454,7 +456,7 @@ textarea:focus {
   outline: none;
 }
 
-    /* nav botton do modal de postagem */
+/* nav botton do modal de postagem */
 .navbottomPost {
   position: fixed;
   bottom: 10;
@@ -465,7 +467,7 @@ textarea:focus {
   align-items: center;
   width: 80%;
   height: 50px;
-  
+
   border: 1px solid #00bf1f;
 }
 .modal button {
@@ -502,13 +504,31 @@ textarea:focus {
   font-size: 12px;
 }
 
+.tab,
+.nav-item {
+    transition: color 0.3s ease;
+}
+
+.tab:hover,
+.nav-item:hover {
+    color: #00bf1f;
+}
+
+
 @media screen and (max-width: 1024px) {
   main {
     flex-direction: column;
     align-items: center;
   }
   .modal-content {
-   flex-direction: column-reverse;
-    
+    flex-direction: column-reverse;
+  }
+  .tab,
+  .nav-item {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+  .bottom-nav {
+    padding: 10px 0;
   }
 }

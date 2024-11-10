@@ -5,8 +5,52 @@
   box-sizing: border-box;
 }
 
+/* 1 - tela de carregamento */
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+    /*1.2 - Barra de Carregamento */
+.loading-bar-container {
+  width: 60%;
+  background-color: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+  margin-top: 20px;
+}
+
+.loading-bar {
+  width: 0;
+  height: 100%;
+  background-color: #03af50;
+  animation: loading 3s linear forwards;
+}
+
+/* 1.3 - Animação da Barra de Carregamento */
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* CONTEÚDO PRINCIPAL */
 main {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -22,11 +66,11 @@ main {
   justify-content: center;
   align-items: center;
 }
-.logoComNome .boneco {
+.logoComNome .boneco, #loading-screen .boneco {
   width: 165px;
   height: 115px;
 }
-.logoComNome .nomeLogo {
+.logoComNome .nomeLogo, #loading-screen .nomeLogo {
   width: 190px;
   height: 55px;
 }
@@ -49,7 +93,7 @@ main h1 {
   width: 50px;
   height: 250px;
 }
-  /* 1.2 - CSS do bloco de opção */
+/* 1.2 - CSS do bloco de opção */
 .opcao {
   display: flex;
   flex-direction: column;
@@ -93,6 +137,7 @@ main h1 {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.22px;
+  margin-bottom: 5px;
 }
 .loginpage p {
   margin-bottom: 0;

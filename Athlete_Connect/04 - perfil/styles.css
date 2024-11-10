@@ -1,22 +1,83 @@
-*{
-    text-align: center;
-    margin-left: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    display: flex;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.stats{
-    width: 207px;
-    height: 246px;
+header {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  align-items: center;
 }
 
-.cardio{
-    width: 374px;
-    height: 279px;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+/* Contêiner dos cartões de estatísticas */
+.stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* Cartão de estatísticas */
+.stat-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+canvas {
+  margin-top: 15px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  /* Ajusta o título para telas menores */
+  h1 {
+    font-size: 20px;
+  }
+
+  /* Cartões de estatísticas em colunas */
+  .stat-card {
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  /* Ajusta a margem e o padding da página */
+  body {
+    padding: 10px;
+  }
+
+  /* Ajusta o tamanho dos textos */
+  h1 {
+    font-size: 18px;
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
 }
