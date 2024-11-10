@@ -12,6 +12,23 @@
     />
   </head>
   <body>
+    <div id="loading-screen">
+      <img
+        class="boneco"
+        src="https://i.ibb.co/g9rGQxK/boneco.png"
+        alt="boneco"
+        border="0"
+      />
+      <img
+        class="nomeLogo"
+        src="https://i.ibb.co/3sbYMLW/nomeLogo.png"
+        alt="nomeLogo"
+        border="0"
+      />
+      <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
     <main>
       <section class="logoComNome">
         <img
@@ -73,5 +90,17 @@
         />
       </div>
     </main>
+
+    <script>
+      window.addEventListener("load", () => {
+        const loadingScreen = document.getElementById("loading-screen");
+        const mainContent = document.getElementById("main-content");
+
+        setTimeout(() => {
+          loadingScreen.style.display = "none";
+          mainContent.style.display = "block";
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
