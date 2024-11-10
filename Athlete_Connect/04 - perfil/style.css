@@ -162,7 +162,9 @@ main {
   border-bottom: 2px solid #d9d9d9;
   
 }
-
+.postagem:last-child {
+  margin-bottom: 70px; /* ajuste conforme o tamanho da bottom-nav */
+}
 .postagemcontent {
   display: flex;
   flex-direction: column;
