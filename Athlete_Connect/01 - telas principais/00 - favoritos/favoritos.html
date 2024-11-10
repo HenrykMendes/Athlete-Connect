@@ -6,6 +6,10 @@
     <title>Favoritos</title>
     <link rel="stylesheet" href="../assets/style.css" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
     rel="icon"
     href="../images/Athlete_Connect Icon.png"
     type="image/x-icon"
@@ -52,79 +56,12 @@
             />
             <div class="iconsPostagem">
               <!-- botao de like -->
-              <input type="checkbox" id="checkbox" />
-              <label for="checkbox">
-                <svg
-                  id="heart-svg"
-                  viewBox="467 392 58 57"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g
-                    id="Group"
-                    fill="none"
-                    fill-rule="evenodd"
-                    transform="translate(467 392)"
-                  >
-                    <path
-                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                      id="heart"
-                      fill="none"
-                      stroke="#505050"
-                      stroke-width="3"
-                    />
-                    <circle
-                      id="main-circ"
-                      fill="#FF0000"
-                      opacity="0"
-                      cx="29.5"
-                      cy="29.5"
-                      r="1.5"
-                    />
-
-                    <g id="grp7" opacity="0" transform="translate(7 6)">
-                      <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                      <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp6" opacity="0" transform="translate(0 28)">
-                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                      <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp3" opacity="0" transform="translate(52 28)">
-                      <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                      <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp2" opacity="0" transform="translate(44 6)">
-                      <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp5" opacity="0" transform="translate(14 50)">
-                      <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                      <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp4" opacity="0" transform="translate(35 50)">
-                      <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                      <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp1" opacity="0" transform="translate(24)">
-                      <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                      <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-                    </g>
-                  </g>
-                </svg>
-              </label>
+                <button onclick="Toggle1(this)" class="likebtn">
+                  <i class="bi bi-heart"></i>
+                </button>
               <!-- ---- -->
               <!-- comment img -->
-              <img
-                src="../../images/commentButton.svg"
-                alt="iconamoon-comment"
-                border="0"
-              />
+              <i class="bi bi-chat commentBtn"></i>
             </div>
             <div class="estatisticasPostagem">
               <div class="pessoas">
@@ -170,79 +107,12 @@
             <p>Estou com expectativa de representar o Brasil no Mundial Universitário</p>
             <div class="iconsPostagem">
               <!-- botao de like -->
-              <input type="checkbox" id="checkbox" />
-              <label for="checkbox">
-                <svg
-                  id="heart-svg"
-                  viewBox="467 392 58 57"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g
-                    id="Group"
-                    fill="none"
-                    fill-rule="evenodd"
-                    transform="translate(467 392)"
-                  >
-                    <path
-                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                      id="heart"
-                      fill="none"
-                      stroke="#505050"
-                      stroke-width="3"
-                    />
-                    <circle
-                      id="main-circ"
-                      fill="#FF0000"
-                      opacity="0"
-                      cx="29.5"
-                      cy="29.5"
-                      r="1.5"
-                    />
-
-                    <g id="grp7" opacity="0" transform="translate(7 6)">
-                      <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                      <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp6" opacity="0" transform="translate(0 28)">
-                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                      <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp3" opacity="0" transform="translate(52 28)">
-                      <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                      <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp2" opacity="0" transform="translate(44 6)">
-                      <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp5" opacity="0" transform="translate(14 50)">
-                      <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                      <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp4" opacity="0" transform="translate(35 50)">
-                      <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                      <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp1" opacity="0" transform="translate(24)">
-                      <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                      <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-                    </g>
-                  </g>
-                </svg>
-              </label>
+                <button onclick="Toggle1(this)" class="likebtn">
+                  <i class="bi bi-heart"></i>
+                </button>
               <!-- ---- -->
               <!-- comment img -->
-              <img
-                src="../../images/commentButton.svg"
-                alt="iconamoon-comment"
-                border="0"
-              />
+              <i class="bi bi-chat commentBtn"></i>
             </div>
             <div class="estatisticasPostagem">
               <div class="pessoas">
@@ -289,79 +159,12 @@
             <img src="https://i.ytimg.com/vi/176Hkj9awiY/maxresdefault.jpg" alt="corrida">
             <div class="iconsPostagem">
               <!-- botao de like -->
-              <input type="checkbox" id="checkbox" />
-              <label for="checkbox">
-                <svg
-                  id="heart-svg"
-                  viewBox="467 392 58 57"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g
-                    id="Group"
-                    fill="none"
-                    fill-rule="evenodd"
-                    transform="translate(467 392)"
-                  >
-                    <path
-                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                      id="heart"
-                      fill="none"
-                      stroke="#505050"
-                      stroke-width="3"
-                    />
-                    <circle
-                      id="main-circ"
-                      fill="#FF0000"
-                      opacity="0"
-                      cx="29.5"
-                      cy="29.5"
-                      r="1.5"
-                    />
-
-                    <g id="grp7" opacity="0" transform="translate(7 6)">
-                      <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                      <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp6" opacity="0" transform="translate(0 28)">
-                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                      <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp3" opacity="0" transform="translate(52 28)">
-                      <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                      <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp2" opacity="0" transform="translate(44 6)">
-                      <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp5" opacity="0" transform="translate(14 50)">
-                      <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                      <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp4" opacity="0" transform="translate(35 50)">
-                      <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                      <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp1" opacity="0" transform="translate(24)">
-                      <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                      <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-                    </g>
-                  </g>
-                </svg>
-              </label>
+                <button onclick="Toggle1(this)" class="likebtn">
+                  <i class="bi bi-heart"></i>
+                </button>
               <!-- ---- -->
               <!-- comment img -->
-              <img
-                src="../../images/commentButton.svg"
-                alt="iconamoon-comment"
-                border="0"
-              />
+              <i class="bi bi-chat commentBtn"></i>
             </div>
             <div class="estatisticasPostagem">
               <div class="pessoas">
@@ -408,79 +211,12 @@
             <img src="https://dims.apnews.com/dims4/default/9977157/2147483647/strip/true/crop/5000x3333+0+0/resize/599x399!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F2b%2Fca%2F99d9034cb5ce417213bab559c6c6%2F56fb6d198c1449a99e23029b74fcfebd" alt="corrida">
             <div class="iconsPostagem">
               <!-- botao de like -->
-              <input type="checkbox" id="checkbox" />
-              <label for="checkbox">
-                <svg
-                  id="heart-svg"
-                  viewBox="467 392 58 57"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g
-                    id="Group"
-                    fill="none"
-                    fill-rule="evenodd"
-                    transform="translate(467 392)"
-                  >
-                    <path
-                      d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
-                      id="heart"
-                      fill="none"
-                      stroke="#505050"
-                      stroke-width="3"
-                    />
-                    <circle
-                      id="main-circ"
-                      fill="#FF0000"
-                      opacity="0"
-                      cx="29.5"
-                      cy="29.5"
-                      r="1.5"
-                    />
-
-                    <g id="grp7" opacity="0" transform="translate(7 6)">
-                      <circle id="oval1" fill="#9CD8C3" cx="2" cy="6" r="2" />
-                      <circle id="oval2" fill="#8CE8C3" cx="5" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp6" opacity="0" transform="translate(0 28)">
-                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="7" r="2" />
-                      <circle id="oval2" fill="#91D2FA" cx="3" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp3" opacity="0" transform="translate(52 28)">
-                      <circle id="oval2" fill="#9CD8C3" cx="2" cy="7" r="2" />
-                      <circle id="oval1" fill="#8CE8C3" cx="4" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp2" opacity="0" transform="translate(44 6)">
-                      <circle id="oval2" fill="#CC8EF5" cx="5" cy="6" r="2" />
-                      <circle id="oval1" fill="#CC8EF5" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp5" opacity="0" transform="translate(14 50)">
-                      <circle id="oval1" fill="#91D2FA" cx="6" cy="5" r="2" />
-                      <circle id="oval2" fill="#91D2FA" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp4" opacity="0" transform="translate(35 50)">
-                      <circle id="oval1" fill="#F48EA7" cx="6" cy="5" r="2" />
-                      <circle id="oval2" fill="#F48EA7" cx="2" cy="2" r="2" />
-                    </g>
-
-                    <g id="grp1" opacity="0" transform="translate(24)">
-                      <circle id="oval1" fill="#9FC7FA" cx="2.5" cy="3" r="2" />
-                      <circle id="oval2" fill="#9FC7FA" cx="7.5" cy="2" r="2" />
-                    </g>
-                  </g>
-                </svg>
-              </label>
+                <button onclick="Toggle1(this)" class="likebtn">
+                  <i class="bi bi-heart"></i>
+                </button>
               <!-- ---- -->
               <!-- comment img -->
-              <img
-                src="../../images/commentButton.svg"
-                alt="iconamoon-comment"
-                border="0"
-              />
+              <i class="bi bi-chat commentBtn"></i>
             </div>
             <div class="estatisticasPostagem">
               <div class="pessoas">
