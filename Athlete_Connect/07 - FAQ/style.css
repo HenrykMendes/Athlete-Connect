@@ -8,7 +8,14 @@
     font-size: 17px;
     border: none;
   }
-  
+  .faq{
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px; 
+
+  }
   .topnav .search-container button {
     float: right;
     padding: 6px 10px;
