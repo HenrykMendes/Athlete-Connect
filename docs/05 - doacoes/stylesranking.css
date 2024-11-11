@@ -5,9 +5,13 @@
 }
 
 .ranking-container {
-  width: 405px;
-  height: 812px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
   background: linear-gradient(
     168deg,
     #03af50,

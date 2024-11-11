@@ -111,6 +111,9 @@ main {
   width: 100%;
   border-bottom: 2px solid #d9d9d9;
 }
+.profileSearch:last-child {
+  margin-bottom: 70px; /* ajuste conforme o tamanho da bottom-nav */
+}
 
 .profileSearch img {
   width: 60px;
