@@ -1,9 +1,9 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -13,9 +13,10 @@ body {
   margin: 0;
   background-color: #f0f0f5;
 }
-.voltar{
-    display: flex;
-    align-items: flex-start;
+
+.voltar {
+  display: flex;
+  align-items: flex-start;
 }
 
 /* Container principal */
@@ -28,25 +29,26 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  
+
 }
 
 .payment-container h2 {
   margin-bottom: 20px;
   color: #333;
-  
+
 }
 
 /* Cartão de crédito */
 .credit-card-box {
   /* coloque no centro tudo */
-  
+
 
   width: 100%;
   margin-bottom: 40px;
 
-  
+
 }
+
 .card {
   position: relative;
   max-width: 360px;
@@ -59,6 +61,7 @@ body {
   justify-content: center;
   padding: 15px;
 }
+
 .card .logo {
   font-weight: bold;
   font-size: 24px;
@@ -66,6 +69,7 @@ body {
   top: 15px;
   right: 15px;
 }
+
 .card .number,
 .card .name,
 .card .expiration {
@@ -80,7 +84,7 @@ body {
   display: block;
   margin-bottom: 5px;
   text-align: left;
-  
+
 }
 
 .payment-form input {
@@ -90,7 +94,7 @@ body {
   height: 47px;
   flex-shrink: 0;
   margin-bottom: 10px;
-  
+
   background-color: #f7fdff;
   border: 1px solid #cdcdcd;
   border-radius: 25px;
@@ -104,9 +108,9 @@ body {
 }
 
 .payment-form .col {
- display: flex;
- flex-direction: column ;
- align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   flex: 1;
   gap: 5px;
 }
@@ -137,7 +141,7 @@ body {
   }
 
   .credit-card-box {
-    
+
     height: 180px;
   }
 
@@ -153,4 +157,17 @@ body {
   .btn {
     padding: 12px;
   }
+}
+
+@media (min-width: 1280px) {
+  .credit-card-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card{
+    height: 18cap ;
+    width: 60cap;
+  }
+
 }
