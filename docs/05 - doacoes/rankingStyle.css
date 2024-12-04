@@ -1,0 +1,93 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+header img{
+  max-width: 100px ;
+}
+.tempo-ranking{
+  color:#46854e;
+  font-size: 20px;
+}
+.texto{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+}
+.rank{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.pessoa{
+  display: flex;
+  margin: 15px;
+  justify-content: space-between;
+  padding: 0px 400px; 
+}
+
+
+.pessoa img{
+  max-width: 40px;    
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px 20px 0px 0px;
+  border: 2px solid #f1efef;
+  background-color: rgb(255, 255, 255);
+  padding: 18px 0;
+}
+
+.nav-item {
+  color: #444;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.search{
+  padding: 69px;
+    text-align: center;
+   
+}
+
+.medalha, .foto {
+  border-radius: 50%;
+  max-width: 100px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .pessoa {
+    padding: 0px 15px;
+  }
+  .foto {
+    margin-left: -50px;
+  }
+  
+}
